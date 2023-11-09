@@ -4,7 +4,7 @@ import {
   computed,
 } from "https://unpkg.com/vue@3/dist/vue.esm-browser.js";
 
-const students = createApp({
+createApp({
   setup() {
     const students = ref([
       "Albertina",
@@ -20,8 +20,10 @@ const students = createApp({
       "Maria",
     ]);
 
+    
+
     return {
-      students,
+      students
     };
   },
 }).mount("#app");
